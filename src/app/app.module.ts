@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { routing } from '../route' ;
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NavbarHeaderComponent } from './navbar-header/navbar-header.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     BlogComponent,
     HelpComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    NavbarHeaderComponent
     // NgbModule
   ],
   imports: [

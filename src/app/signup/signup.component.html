@@ -1,3 +1,21 @@
-<p>
-  signup works!
-</p>
+<app-navbar-header></app-navbar-header>
+<div class="column">
+    <form id="vincentkit">
+      <h1>Create Account</h1>
+      <fieldset>
+        <label for="email">Email</label>
+        <input class="email" id="email" type="text">
+        <label class="half" for="name">Nickname
+          <input class="name" id="name" type="text">
+        </label>
+        <label class="half last" for="password2">Password
+          <input class="password" id="password2" type="password">
+        </label>
+        <div class="clear"></div>
+        <button class="submit2" type="submit" (click)=signin()>Sign Up</button>
+        <div class="clear"></div>
+        <div class="line"><span>Have an account?</span></div>
+        <button class="button si" (click)=signin()>Sign-in</button>
+      </fieldset>
+    </form>
+  </div>

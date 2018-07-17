@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+.hand_cursor{
+cursor: pointer;
+}
+.nv-link:hover {
+    background: transparent!important;
+    color: #ff3a54;
+}
+.img-heig{
+    height: 300px;
+}
+.thumbnail {
+    border-radius: 6px!important;
+}

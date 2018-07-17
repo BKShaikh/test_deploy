@@ -1,3 +1,27 @@
-<p>
-  login works!
-</p>
+<app-navbar-header></app-navbar-header>
+<div class="wrapper">
+    <div class="column">
+      <form id="vincentkit">
+        <h1>Login</h1>
+        <fieldset>
+          <label for="email">Email</label>
+          <input class="email" placeholder="Email" (change)="val()" id="email" type="email" name="email" [(ngModel)]="login_data.email">
+          <em *ngIf="!error"> Enter Correct Email Format
+          </em>
+          <label  for="password">Password</label>
+          <input placeholder="Password" class="password" id="password"  type="password" name="password" [(ngModel)]="login_data.password">
+          <button class="submit" type="submit" (click)=login()>Sign In</button>
+          <div class="clear"></div>
+          <a class=lp (click)=signup() >Register Account</a>
+          <div class="line">
+            <span>OR</span>
+          </div>
+          <a class="button tw" href="#">
+            <i class="fa fa-twitter"></i> Twitter</a>
+          <a class="button fb" href="#">
+            <i class="fa fa-facebook"></i> Facebook</a>
+        </fieldset>
+      </form>
+    </div>
+   
+  </div>

@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md navbar-default fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" (click)="isCollapsed = !isCollapsed">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand hand_cursor" (click)="home()">WebSiteName</a>
+      </div>
+      <div [ngbCollapse]="isCollapsed" class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="text-uppercase hand_cursor">Solution</a>
+          </li>
+          <li>
+            <a class="text-uppercase hand_cursor">Features</a>
+          </li>
+          <li>
+            <a class="text-uppercase hand_cursor">Blog</a>
+          </li>
+          <li>
+            <a class="text-uppercase hand_cursor">Help</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="hand_cursor" (click)="signup()">
+              <span class="glyphicon glyphicon-user text-uppercase "></span> Sign Up</a>
+          </li>
+          <li>
+            <a class="hand_cursor" (click)="login()">
+              <span class="glyphicon glyphicon-log-in text-uppercase"></span> Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
