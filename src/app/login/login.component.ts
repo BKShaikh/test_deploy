@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
   validate() {
-    if (this.login_data.email == "abc@livee.com" && this.login_data.password == "123") {
+    if (this.login_data.email == "abc@live.com" && this.login_data.password == "123") {
       return true
     }
     return false
@@ -26,5 +26,8 @@ export class LoginComponent implements OnInit {
   }
   signup(){
     this.router.navigate(['sign_up'])
+  }
+  login(){
+    this.router.navigate(['index'])
   }
 }

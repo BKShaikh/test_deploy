@@ -5,6 +5,7 @@ import { SolutionComponent } from "./app/solution/solution.component"
 import { BlogComponent } from "./app/blog/blog.component"
 import { HelpComponent } from "./app/help/help.component"
 import { MainComponent } from "./app/main/main.component"
+import { HomePageComponent } from "./app/home-page/home-page.component"
 
 export const APP_ROUTES: Routes = [
 
@@ -25,6 +26,9 @@ export const APP_ROUTES: Routes = [
     },
     {
         path: 'home', component: MainComponent
+    },
+    {
+        path: 'index', component: HomePageComponent
     },
     {
         path: '', redirectTo: '/home', pathMatch: 'full'

@@ -1,0 +1,579 @@
+<div class="container" id="tourpackages-carousel">
+
+  <div class="row">
+    <ng-container *ngFor="let d of data; let i = index">
+      <!-- <ng-container *ngif="i < 4"> -->
+        <div  class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+          <div class="thumbnail">
+            <img class="img-responsive main-img" src='assets/images-2/{{i}}.jpg' alt="">
+            <div class="caption">
+              <div class="row caption-inside-row">
+                <div class="left-align pull-left">
+                  <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                    <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                    <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+                  </div>
+                  <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                    style="margin-left: 0px;" role="button" tabindex="0">
+                    <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+                  </div>
+                </div>
+              </div>
+              <div class="row caption-inside-row">
+                <strong>
+                  <span> {{d.cardname}}  </span>
+                </strong>
+              </div>
+              <div class="row caption-inside-row">
+                <div class="left-align pull-left">
+                  <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                    <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                    <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+                  </div>
+                </div>
+                <div class="left-align pull-left social-buttons">
+                  <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                    role="button" tabindex="0">
+                    <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+                  </div>
+
+                </div>
+                <div class="left-align pull-left social-buttons">
+                  <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                    role="button" tabindex="0">
+                    <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    <!-- </ng-container> -->
+    <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/goallogo.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Combine Study</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/3.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Maths Preparation</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/4.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Working</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <!-- End row -->
+
+  <!-- <div class="row">
+
+    <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/5.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Current Courses</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/6.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Protecting Ideas</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/7.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Publications</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/8.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Virtual Teaching Program</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- End row -->
+  <!-- <div class="row">
+
+    <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/9.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>Field Trips, Events and Activities</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/10.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>BabyGapy - June2018</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/11.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>WETLANDS WORKSHOPS</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- <div class="col-xs-6 col-sm-4 col-md-3" id="custom_div">
+      <div class="thumbnail">
+        <img class="img-responsive main-img" src="assets/images-2/12.jpg" alt="">
+        <div class="caption">
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/gray_notification_ic-af65cd259e.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                style="margin-left: 0px;" role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/copybutton-7423612fbe.png">
+              </div>
+            </div>
+          </div>
+          <div class="row caption-inside-row">
+            <strong>
+              <span>The Schwinn Cycling International</span>
+            </strong>
+          </div>
+
+          <div class="row caption-inside-row">
+            <div class="left-align pull-left">
+              <div class="card-number-icon pull-left pos-rel" uib-tooltip="Goal Notification" tooltip-placement="bottom-left" style="margin-top: 1px; margin-right:10px">
+                <img class="imgicon" src="assets/images-2/like-01-6dbee550a9.png">
+                <div class="pos-abs btn-warning ng-binding ng-hide" ng-show="goal.notificationsCount>0" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/share_ic-4bfc532234.png">
+              </div>
+
+            </div>
+            <div class="left-align pull-left social-buttons">
+              <div class="pull-right card-number-txt" uib-tooltip="Copy Goal" tooltip-placement="bottom" ng-click="vm.InspiredGoalFun(goal)"
+                role="button" tabindex="0">
+                <img class="imgicon2" src="assets/images-2/connection_ic-a4932c2146.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- </div> -->-->
+  <!-- End row -->
+
+</div>

@@ -11,6 +11,10 @@ import { SignupComponent } from './signup/signup.component';
 import { routing } from '../route' ;
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NavbarHeaderComponent } from './navbar-header/navbar-header.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { GoalComponent } from './goal/goal.component';
+import { DiscoverComponent } from './discover/discover.component';
+import { DimensionsComponent } from './dimensions/dimensions.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,11 @@ import { NavbarHeaderComponent } from './navbar-header/navbar-header.component';
     HelpComponent,
     LoginComponent,
     SignupComponent,
-    NavbarHeaderComponent
+    NavbarHeaderComponent,
+    HomePageComponent,
+    GoalComponent,
+    DiscoverComponent,
+    DimensionsComponent
     // NgbModule
   ],
   imports: [

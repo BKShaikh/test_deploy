@@ -14,3 +14,8 @@ cursor: pointer;
 .thumbnail {
     border-radius: 6px!important;
 }
+.tabMenuPanel {
+    padding-top: 25px;
+    padding-bottom: 18px;
+    text-align: center;
+}
