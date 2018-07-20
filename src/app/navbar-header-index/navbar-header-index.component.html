@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-md navbar-default fixed-top">
+  <div class="container-fluid backcolor">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="isCollapsed = !isCollapsed">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand hand_cursor" (click)="home()">WebSiteName</a>
+    </div>
+    <div [ngbCollapse]="isCollapsed" class="collapse navbar-collapse navbar-right" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li>
+          <a class="text-uppercase hand_cursor">Solution</a>
+        </li>
+        <li>
+          <a class="text-uppercase hand_cursor">Features</a>
+        </li>
+        <li>
+          <a class="text-uppercase hand_cursor">Blog</a>
+        </li>
+        <li>
+          <a class="text-uppercase hand_cursor">Help</a>
+        </li>
+        
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+          <li class="koibhi">
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                  </div>
+                </div>
+          </li>
+          
+        </ul>
+    </div>
+  </div>
+</nav>

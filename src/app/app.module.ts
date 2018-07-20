@@ -15,6 +15,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { GoalComponent } from './goal/goal.component';
 import { DiscoverComponent } from './discover/discover.component';
 import { DimensionsComponent } from './dimensions/dimensions.component';
+import { NavbarHeaderIndexComponent } from './navbar-header-index/navbar-header-index.component';
+import { LoginAnimatedComponent } from './login-animated/login-animated.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,9 @@ import { DimensionsComponent } from './dimensions/dimensions.component';
     HomePageComponent,
     GoalComponent,
     DiscoverComponent,
-    DimensionsComponent
+    DimensionsComponent,
+    NavbarHeaderIndexComponent,
+    LoginAnimatedComponent
     // NgbModule
   ],
   imports: [

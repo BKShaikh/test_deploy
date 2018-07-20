@@ -11,5 +11,11 @@ export class DimensionsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  data: any[] = [
+    { "cardname": "Default" },
+    { "cardname": "Work" },
+    { "cardname": "Health" },
+    { "cardname": "Education" },
+    { "cardname": "Family" }
+  ];
 }

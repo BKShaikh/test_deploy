@@ -6,6 +6,7 @@ import { BlogComponent } from "./app/blog/blog.component"
 import { HelpComponent } from "./app/help/help.component"
 import { MainComponent } from "./app/main/main.component"
 import { HomePageComponent } from "./app/home-page/home-page.component"
+import { LoginAnimatedComponent } from "./app/login-animated/login-animated.component"
 
 export const APP_ROUTES: Routes = [
 
@@ -29,6 +30,9 @@ export const APP_ROUTES: Routes = [
     },
     {
         path: 'index', component: HomePageComponent
+    },
+    {
+        path: 'user_login', component: LoginAnimatedComponent
     },
     {
         path: '', redirectTo: '/home', pathMatch: 'full'

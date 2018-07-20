@@ -1,20 +1,32 @@
-<div class="col-md-12 col-xs-12 col-sm-12 no-padd  tabMenuPanel">
-<ngb-tabset>
-  <ngb-tab title="Simple">
+<app-navbar-header-index></app-navbar-header-index>
+<head>
+  <style>
+    .navvv-tabs{
+      border-bottom: 1px solid#ddd !important;
+    text-align: center !important;
+    width: 25% !important;
+    margin-left: 40% !important;
+    }  
+  </style>
+</head>
+<div class="col-md-12 col-xs-12 col-sm-12 no-padd tabMenuPanel">
+<ngb-tabset >
+  <ngb-tab title="Discover">
     <ng-template ngbTabContent>
      <app-goal></app-goal>
     </ng-template>
   </ngb-tab>
+  <ngb-tab title="My Goals" [disabled]="false">
+      <ng-template ngbTabContent>
+       <app-discover></app-discover>
+      </ng-template>
+    </ngb-tab>
   <ngb-tab>
-    <ng-template ngbTabTitle>Fancy title</ng-template>
+    <ng-template ngbTabTitle>My Library</ng-template>
     <ng-template ngbTabContent>
       <app-dimensions></app-dimensions>
     </ng-template>
   </ngb-tab>
-  <ngb-tab title="Disabled" [disabled]="true">
-    <ng-template ngbTabContent>
-     <app-discover></app-discover>
-    </ng-template>
-  </ngb-tab>
+ 
 </ngb-tabset>
 </div>

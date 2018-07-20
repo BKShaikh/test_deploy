@@ -1,0 +1,72 @@
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic);
+
+font-family: 'Open Sans', sans-serif; */
+.tabMenuPanel2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    min-height: 3000px;
+    padding-top: 70px;
+    font-family: 'Open Sans',sans-serif;
+  }
+  
+  .thumbnail {
+    /*overflow: hidden;*/
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0px;
+    box-shadow: 5px 5px 8px 0px;
+    /*border: 2px solid #f3f7f9;
+    padding: 5px;*/
+
+}
+  
+  .thumbnail img {
+      width: 100%;
+  }
+  #custom_div{
+      margin-top: 33px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .caption-inside-row{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top: 15px;
+      margin-left:0px;
+      margin-right:0px;
+  }
+  .card-number-txt{
+      margin-left: 5px;
+  }
+  .social-buttons{
+      margin-left:10px;
+  }
+  
+  
+  .main-img{
+      height: 203px !important;
+  }
+
+  .mybackground_div_2{
+    margin-top: -15px;
+    background-color: #d1e7f4;
+    height: 15px;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px 10px 0px 0px;
+}
+.mybackground_div_1{
+    margin-top: -25px;
+    background-color: #b6d6eb;
+    height: 10px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px 10px 0px 0px;
+}
